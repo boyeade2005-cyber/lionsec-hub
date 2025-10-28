@@ -1,98 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LionSec Hub — Cybersecurity & Tech Training</title>
-  <meta name="description" content="LionSec Hub — practical, mentor-led cybersecurity, dev and cloud training. Career certificates, hands-on labs, and job support." />
+  <meta name="description" content="LionSec Hub — practical, mentor-led cybersecurity, development and cloud training." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#home" class="brand">
-        <div class="logo" aria-hidden="true">
-          <svg viewBox="0 0 64 64" width="40" height="40"><defs>
-            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0" stop-color="#FFC857"/><stop offset="1" stop-color="#FF6B6B"/>
-            </linearGradient>
-          </defs>
-          <rect width="64" height="64" rx="12" fill="url(#g)"/>
-          <path d="M18 42c6-6 12-6 18 0" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none"/>
-          <path d="M22 28c4-6 14-6 18 0" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none"/>
-          </svg>
-        </div>
-        <span class="brand-text">LionSec Hub</span>
-      </a>
-
-      <nav class="nav">
+  <header class="navbar">
+    <div class="container nav-inner">
+      <h1 class="brand">🦁 LionSec Hub</h1>
+      <nav>
         <a href="#courses">Courses</a>
         <a href="#projects">Projects</a>
         <a href="#pricing">Pricing</a>
-        <a href="#register" class="btn btn-ghost">Register</a>
+        <a href="#register" class="btn btn-outline">Register</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <h1>Learn. Build. Protect.</h1>
-          <p class="lead">Practical, mentor-led cybersecurity, development and cloud courses with project-based assessments and career certificates.</p>
-          <div class="hero-ctas">
-            <a href="#courses" class="btn btn-primary">View Courses</a>
-            <a href="#register" class="btn btn-outline">Join Next Cohort</a>
-          </div>
-
-          <ul class="trust-list">
-            <li>Hands-on labs & real projects</li>
-            <li>Mentor support & career certificate</li>
-            <li>Flexible payment plans</li>
-          </ul>
-        </div>
-
-        <aside class="hero-right card card-elevated">
-          <div class="card-header">
-            <strong>Next Cohort</strong>
-            <span class="pill">Starts Nov 2025</span>
-          </div>
-          <div class="card-body">
-            <p><strong>Mode:</strong> Remote (optional in-person labs in Abuja)</p>
-            <p class="muted">Scholarships & installment plans available — limited seats.</p>
-            <a href="#register" class="btn btn-secondary">Reserve a spot</a>
-          </div>
-        </aside>
+  <section class="hero container">
+    <div class="hero-text">
+      <h2>Learn. Build. Protect.</h2>
+      <p>Master cybersecurity, web development, and cloud security through hands-on projects, mentorship, and certification.</p>
+      <div class="hero-buttons">
+        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+        <a href="#register" class="btn btn-secondary">Join Cohort</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about" class="section container">
-      <h2 class="section-title">About LionSec Hub</h2>
-      <p class="section-intro">We teach practical cybersecurity, secure development, cloud and mobile engineering with real labs, projects and job-ready certificates. Founded to make security careers accessible across Africa and beyond.</p>
-    </section>
+  <section id="courses" class="container section">
+    <h3>Courses & Tracks</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Cybersecurity Foundations</h4>
+        <p>Networking, OS hardening, vulnerability scanning, and response labs.</p>
+        <span>₦220,000 — 3 months</span>
+      </div>
+      <div class="card">
+        <h4>Ethical Hacking & Pen-testing</h4>
+        <p>Hands-on labs using Nmap, Metasploit, Burp Suite and real attack simulations.</p>
+        <span>₦380,000 — 4 months</span>
+      </div>
+      <div class="card">
+        <h4>Full-stack Web Development</h4>
+        <p>Frontend + backend + deployment for modern, secure web apps.</p>
+        <span>₦200,000 — 4 months</span>
+      </div>
+    </div>
+  </section>
 
-    <section id="courses" class="section container">
-      <h2 class="section-title">Courses & Tracks</h2>
-      <p class="section-intro">Short, practical tracks designed for beginners and professionals. All include a career certificate on completion.</p>
+  <section id="pricing" class="container section">
+    <h3>Affordable & Flexible Plans</h3>
+    <p>We offer full payments or flexible weekly installment plans starting from ₦5,000/week.</p>
+  </section>
 
-      <div class="grid grid-3">
-        <article class="course-card">
-          <h3>Cybersecurity Foundations</h3>
-          <p>Networking basics, OS hardening, vulnerability scanning, incident response labs.</p>
-          <div class="meta"><span>Duration: 3 months</span><span>Price: ₦220,000</span></div>
-          <a href="#register" class="link-cta">Apply now</a>
-        </article>
+  <section id="register" class="container section">
+    <h3>Register Now</h3>
+    <form id="registerForm">
+      <input type="text" placeholder="Full name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="WhatsApp number" required />
+      <select required>
+        <option value="">Choose a course</option>
+        <option>Cybersecurity Foundations</option>
+        <option>Ethical Hacking & Pen-testing</option>
+        <option>Full-stack Web Development</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
 
-        <article class="course-card">
-          <h3>Ethical Hacking & Pen-testing</h3>
-          <p>Hands-on pentest labs (Nmap, Metasploit, Burp) and CTF-style exercises to build reports and remediation plans.</p>
-          <div class="meta"><span>Duration: 4 months</span><span>Price: ₦380,000</span></div>
-          <a href="#register" class="link-cta">Apply now</a>
-        </article>
+  <footer class="footer">
+    <p>© 2025 LionSec Hub — Securing the Future, One Mind at a Time.</p>
+  </footer>
 
-        <article class="course-card">
-          <h3>Cloud Security & DevSecOps</h3>
-          <p>Cloud hardening, IaC scanning, CI/CD security, automated testing, and secure deployments.</p>
-          <div class
+  <script src="script.js"></script>
+</body>
+</html>
